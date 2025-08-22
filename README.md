@@ -25,7 +25,6 @@
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            /* Изменен фон на тёмно-серый */
             background-color: #1a1a1a;
             color: #333;
             min-height: 100vh;
@@ -34,15 +33,13 @@
             overflow-x: hidden;
             zoom: 0.8; /* Масштаб 80% */
         }
-        /* Удалены стили фона видеокарт RTX и эффектов */
-
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
         .container {
-            max-width: 1400px; /* Увеличен для 4 столбцов */
+            max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -166,24 +163,24 @@
             margin-bottom: 25px;
             text-align: center;
             background: rgba(0, 0, 0, 0.6);
-            padding: 20px; /* Уменьшено на 10% */
+            padding: 20px;
             border-radius: var(--border-radius);
             box-shadow: var(--box-shadow);
             backdrop-filter: blur(5px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            position: sticky; /* Закреплено сверху */
+            position: sticky;
             top: 0;
             z-index: 10;
             border-left: 3px solid var(--success-color);
             border-right: 3px solid var(--success-color);
         }
         .search-bar input {
-            padding: 12px 16px; /* Уменьшено на 10% */
+            padding: 12px 16px;
             width: 100%;
             max-width: 500px;
             border: 2px solid rgba(255, 255, 255, 0.3);
             border-radius: 25px;
-            font-size: 14px; /* Уменьшено на 10% */
+            font-size: 14px;
             outline: none;
             transition: var(--transition);
             background: rgba(255, 255, 255, 0.1);
@@ -199,7 +196,7 @@
             box-shadow: 0 0 15px rgba(39, 174, 96, 0.5);
         }
         .search-bar button {
-            padding: 12px 24px; /* Уменьшено на 10% */
+            padding: 12px 24px;
             background: linear-gradient(45deg, var(--success-color), #219653);
             color: white;
             border: none;
@@ -219,7 +216,7 @@
         }
         .advertisements {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 столбца */
+            grid-template-columns: repeat(4, 1fr);
             gap: 25px;
             margin-bottom: 30px;
         }
@@ -278,26 +275,24 @@
             margin-bottom: 15px;
             line-height: 1.5;
         }
-        /* Стиль для отображения контактной информации */
         .contact-info-display {
-            color: #3498db; /* Синий цвет для выделения */
+            color: #3498db; 
             font-weight: bold;
             margin-bottom: 10px;
             padding: 8px;
-            background: rgba(52, 152, 219, 0.1); /* Светло-синий фон */
+            background: rgba(52, 152, 219, 0.1); 
             border-radius: 4px;
-            border-left: 3px solid #3498db; /* Синяя левая граница */
+            border-left: 3px solid #3498db;
             font-size: 0.95em;
         }
-        /* Стиль для отображения локации */
         .location-info {
-            color: #9b59b6; /* Фиолетовый цвет */
+            color: #9b59b6; 
             font-weight: bold;
             margin-bottom: 10px;
             padding: 8px;
-            background: rgba(155, 89, 182, 0.1); /* Светло-фиолетовый фон */
+            background: rgba(155, 89, 182, 0.1); 
             border-radius: 4px;
-            border-left: 3px solid #9b59b6; /* Фиолетовая левая граница */
+            border-left: 3px solid #9b59b6;
             font-size: 0.95em;
         }
         .info {
@@ -307,7 +302,7 @@
             font-size: 0.9em;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding-top: 10px;
-            flex-wrap: wrap; /* Для адаптивности */
+            flex-wrap: wrap; 
         }
         .ad-id {
             background: rgba(39, 174, 96, 0.2);
@@ -585,7 +580,6 @@
         .visible-email {
             display: inline;
         }
-        /* Инструкция по выкладыванию объявлений */
         .instructions {
             background: rgba(39, 174, 96, 0.1);
             border: 1px solid rgba(39, 174, 96, 0.3);
@@ -635,7 +629,6 @@
             font-size: 0.9em;
             border: 1px solid rgba(231, 76, 60, 0.3);
         }
-        /* Скрыты баннеры */
         .realtime-status, .security-banner {
             display: none;
         }
@@ -686,21 +679,17 @@
     </style>
 </head>
 <body>
-    <!-- Удалены эффекты видеокарты -->
     <div class="container">
         <header>
             <h1>ЖелезныеРешения</h1>
             <p class="subtitle">Объявления о продаже электроники</p>
         </header>
-        <!-- Realtime Database статус - СКРЫТ -->
         <div class="realtime-status">
             🔥 Realtime Database подключен ✅
         </div>
-        <!-- Защита от DDoS - СКРЫТА -->
         <div class="security-banner">
             🔒 Защита от DDoS атак и взломов активна
         </div>
-        <!-- Инструкция по выкладыванию объявлений -->
         <div class="instructions">
             <h3>Инструкция по выкладыванию объявлений</h3>
             <ol>
@@ -711,7 +700,6 @@
             </ol>
             <p>⚠️ Объявления с нарушением правил будут удалены без предупреждения!</p>
         </div>
-        <!-- Предупреждение о фильтрации -->
         <div class="filter-warning">
             🛡️ Все объявления автоматически фильтруются на предмет:
             <ul>
@@ -739,7 +727,6 @@
         <!-- Кнопка поддержки сайта -->
         <button class="support-btn" onclick="openModal('supportModal')">Поддержать сайт</button>
         <div class="advertisements" id="adsContainer">
-            <!-- Объявления будут добавляться здесь -->
         </div>
         <div class="contact-info">
             <p>Есть вопросы? Есть предложение о сотрудничестве?</p>
@@ -749,7 +736,6 @@
             <p class="hidden-email" id="hiddenEmail">poddershka24@gmail.com</p>
         </div>
     </div>
-    <!-- Модальное окно регистрации -->
     <div id="registerModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('registerModal')">&times;</span>
@@ -778,7 +764,6 @@
             <div id="registerMessage"></div>
         </div>
     </div>
-    <!-- Модальное окно входа -->
     <div id="loginModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('loginModal')">&times;</span>
@@ -803,7 +788,6 @@
             <div id="loginMessage"></div>
         </div>
     </div>
-    <!-- Модальное окно добавления объявления -->
     <div id="addAdModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('addAdModal')">&times;</span>
@@ -812,7 +796,6 @@
                 <label for="adTitle">Название:</label>
                 <input type="text" id="adTitle" placeholder="Введите название товара">
             </div>
-            <!-- Выбор категории -->
             <div class="form-group">
                 <label for="adCategory">Категория:</label>
                 <select id="adCategory">
@@ -869,7 +852,6 @@
             <div id="addAdMessage"></div>
         </div>
     </div>
-    <!-- Модальное окно редактирования объявления -->
     <div id="editAdModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('editAdModal')">&times;</span>
@@ -879,7 +861,6 @@
                 <label for="editAdTitle">Название:</label>
                 <input type="text" id="editAdTitle" placeholder="Введите название товара">
             </div>
-            <!-- Выбор категории -->
             <div class="form-group">
                 <label for="editAdCategory">Категория:</label>
                 <select id="editAdCategory">
@@ -936,7 +917,6 @@
             <div id="editAdMessage"></div>
         </div>
     </div>
-    <!-- Модальное окно поддержки сайта -->
     <div id="supportModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('supportModal')">&times;</span>
@@ -952,7 +932,6 @@
             </div>
         </div>
     </div>
-    <!-- Системная тема -->
     <div class="system-theme" onclick="toggleSystemTheme()">
         <i>⚙️</i>
     </div>
@@ -984,11 +963,9 @@
         let currentUser = null;
         // Пример данных объявлений
         let advertisements = [];
-        // Фильтрация текста от матерного контента
         function filterText(text) {
             const badWords = ['ебать', 'нахуй', 'пошел', 'сука', 'пиздец', 'бля'];
             let filteredText = text;
-            // Проверяем наличие запрещенных слов
             for (const word of badWords) {
                 const regex = new RegExp(word, 'gi');
                 filteredText = filteredText.replace(regex, '***');
